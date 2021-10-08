@@ -35,9 +35,9 @@ app.post('/short', (req, res) => {
                 compeleted_URL: completed_URL, 
                 shorten_URL: shortURL,
             })
-            return res.render('index', { shortURL: `${baseURL}` + shortURL})
+            return res.render('index', { shortURL: `${baseURL}` + shortURL, completedURL: completed_URL})
         }else
-            return res.render('index', { shortURL: `${baseURL}` + URL.shorten_URL})
+            return res.render('index', { shortURL: `${baseURL}` + URL.shorten_URL, completedURL: completed_URL})
     })
 })
 

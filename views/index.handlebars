@@ -3,6 +3,10 @@
     <h1>URL shorten</h1>
     {{#if shortURL}}
     <div class="container mt-5" style="width: 40rem">
+        <h3>Originial Link:</h3>
+        <a href="{{ completedURL }}" target="_blank">
+            <h5 id="completedURL">{{ completedURL }}</h5
+        ></a>
         <h3>Success! Please use this link:</h3>
         <a href="{{ shortURL }}" target="_blank">
             <h5 id="shortURL">{{ shortURL }}</h5
