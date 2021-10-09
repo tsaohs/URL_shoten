@@ -9,5 +9,4 @@ function generateShortURL(originalURL)
     return randomShortURL
 }
 
-
 module.exports = generateShortURL
